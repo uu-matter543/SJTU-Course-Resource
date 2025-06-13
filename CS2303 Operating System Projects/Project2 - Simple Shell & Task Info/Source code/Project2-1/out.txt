@@ -1,4 +1,0 @@
-in.txt
-out.txt
-shell
-simple_shell.c
