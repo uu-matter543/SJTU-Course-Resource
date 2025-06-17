@@ -24,6 +24,7 @@
 
 `<>`仅表示实际编程中应替换为的内容类型，如下：
 
+- `<codeblock>` 语句块
 - `<constant>` 常量
 - `<expression>` 表达式
 - `<name>` 标识符
