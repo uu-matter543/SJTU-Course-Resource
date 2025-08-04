@@ -37,6 +37,20 @@ private:
         return nullptr;
     }
 
+    int size(node* p) const
+    {
+        if (!p) return 0;
+        return 1 + size(p->left) + size(p->right);
+    }
+
+    int height(node* p) const
+    {
+        if (!p) return 0;
+        int leftHeight = height(p->left);
+        int rightHeight = height(p->right);
+        return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);
+    }
+
     void preorder(node* p) const
     {
         if (p)
@@ -98,6 +112,16 @@ public:
     {   
         delete_node(root);
         root = nullptr;
+    }
+
+    int tree_size() const
+    {
+        return size(root);
+    }
+
+    int tree_height() const
+    {
+        return height(root);
     }
 
     void pre_order() const
@@ -258,6 +282,8 @@ void binary_link_list_test()
     cout << "Enter the binary tree of type 'char'(use '~' for null):" << endl;
     tree.input();
     tree.output();
+    cout << "Tree size: " << tree.tree_size() << endl;
+    cout << "Tree height: " << tree.tree_height() << endl;
     char tmp;
     cout << "Enter a character to find its left child: ";
     cin >> tmp;
@@ -274,11 +300,15 @@ void binary_link_list_test()
     tree.delete_left(tmp);
     cout << "After deleting left child of " << tmp << ", the tree is:" << endl;
     tree.output();
+    cout << "Tree size: " << tree.tree_size() << endl;
+    cout << "Tree height: " << tree.tree_height() << endl;
     cout << "Enter a character to delete its right child: ";
     cin >> tmp;
     tree.delete_right(tmp);
     cout << "After deleting right child of " << tmp << ", the tree is:" << endl;
     tree.output();
+    cout << "Tree size: " << tree.tree_size() << endl;
+    cout << "Tree height: " << tree.tree_height() << endl;
 }
 
 # endif
