@@ -2,6 +2,7 @@
 # define binary_link_list_h
 
 #include <iostream>
+#include <stack>
 #include <queue>
 
 using namespace std;
@@ -263,6 +264,105 @@ public:
             cout << endl;
         }
     }
+
+    void non_recursive_pre_order()
+    {
+        stack<node*> s;
+        if (root) s.push(root);
+        while (!s.empty())
+        {
+            node* tmp = s.top();
+            s.pop();
+            cout << tmp->data << " ";
+            if (tmp->right) s.push(tmp->right);
+            if (tmp->left) s.push(tmp->left);
+        }
+        cout << endl;
+    }
+
+    void non_recursive_in_order()
+    {
+        stack<node*> s;
+        stack<int> flag;
+        node* tmp = root;
+        if (!tmp)
+        {
+            cout << "The tree is empty." << endl;
+            return;
+        }
+        s.push(tmp);
+        flag.push(0);
+        while (!s.empty())
+        {
+            tmp = s.top();
+            int f = flag.top();
+            s.pop();
+            flag.pop();
+            if (f == 0)
+            {
+                s.push(tmp);
+                flag.push(1);
+                if (tmp->left)
+                {
+                    s.push(tmp->left);
+                    flag.push(0);
+                }
+            }
+            else
+            {
+                cout << tmp->data << " ";
+                if (tmp->right)
+                {
+                    s.push(tmp->right);
+                    flag.push(0);
+                }
+            }
+        }
+        cout << endl;
+    }
+
+    void non_recursive_post_order()
+    {
+        stack<node*> s;
+        stack<int> flag;
+        node* tmp = root;
+        if (!tmp)
+        {
+            cout << "The tree is empty." << endl;
+            return;
+        }
+        s.push(tmp);
+        flag.push(0);
+        while (!s.empty())
+        {
+            tmp = s.top();
+            int f = flag.top();
+            s.pop();
+            flag.pop();
+            if (f == 0)
+            {
+                s.push(tmp);
+                flag.push(1);
+                if (tmp->left)
+                {
+                    s.push(tmp->left);
+                    flag.push(0);
+                }
+            }
+            else if (f == 1)
+            {
+                s.push(tmp);
+                flag.push(2);
+                if (tmp->right)
+                {
+                    s.push(tmp->right);
+                    flag.push(0);
+                }
+            }
+            else cout << tmp->data << " ";
+        }
+        cout << endl;
+    }
 };
 
 /**
@@ -281,6 +381,12 @@ void binary_link_list_test()
     binary_link_list<char> tree('~');
     cout << "Enter the binary tree of type 'char'(use '~' for null):" << endl;
     tree.input();
+    cout << "Test for non-recursive pre-order traversal:";
+    tree.non_recursive_pre_order();
+    cout << "Test for non-recursive in-order traversal:";
+    tree.non_recursive_in_order();
+    cout << "Test for non-recursive post-order traversal:";
+    tree.non_recursive_post_order();
     tree.output();
     cout << "Tree size: " << tree.tree_size() << endl;
     cout << "Tree height: " << tree.tree_height() << endl;
