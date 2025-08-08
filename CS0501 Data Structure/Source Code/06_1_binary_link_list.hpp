@@ -363,6 +363,32 @@ public:
         }
         cout << endl;
     }
+
+    node* build_tree(T pre[], T in[], int pl, int pr, int il, int lr)
+    {
+        if (pl > pr || il > lr) return nullptr;
+        T root_data = pre[pl];
+        node* root_node = new node(root_data);
+        int root_index = -1;
+        for (int i = il; i <= lr; ++i)
+        {
+            if (in[i] == root_data)
+            {
+                root_index = i;
+                break;
+            }
+        }
+        int left_size = root_index - il;
+        root_node->left = build_tree(pre, in, pl + 1, pl + left_size, il, root_index - 1);
+        root_node->right = build_tree(pre, in, pl + left_size + 1, pr, root_index + 1, lr);
+        return root_node;
+    }
+
+    binary_link_list(T pre[], T in[], int n, T flag_value) 
+    {
+        root = build_tree(pre, in, 0, n - 1, 0, n - 1);
+        flag = flag_value;
+    }
 };
 
 /**
@@ -415,6 +441,22 @@ void binary_link_list_test()
     tree.output();
     cout << "Tree size: " << tree.tree_size() << endl;
     cout << "Tree height: " << tree.tree_height() << endl;
+    cout << endl;
+    cout << "Test for building tree from pre-order and in-order sequences." << endl;
+    cout << "Enter the number of nodes: ";
+    int n;
+    cin >> n;
+    char* pre = new char[n];
+    char* in = new char[n];
+    cout << "Enter the pre-order sequence (space separated): ";
+    for (int i = 0; i < n; ++i) cin >> pre[i];
+    cout << "Enter the in-order sequence (space separated): ";
+    for (int i = 0; i < n; ++i) cin >> in[i];
+    binary_link_list<char> tree2(pre, in, n, '~');
+    cout << "The constructed tree is:" << endl;
+    tree2.output();
+    delete[] pre;
+    delete[] in;
 }
 
 # endif
