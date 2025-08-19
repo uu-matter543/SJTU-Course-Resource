@@ -19,7 +19,7 @@ private:
         node(const T& x, node* l = nullptr, node* r = nullptr) : data(x), left(l), right(r) {}
     };
     node* root;
-    T flag;
+    T flag; // Flag value to represent null nodes
 
     node* find(const T&x) const
     {
@@ -364,13 +364,19 @@ public:
         cout << endl;
     }
 
-    node* build_tree(T pre[], T in[], int pl, int pr, int il, int lr)
+    /**
+     * @brief Build a binary tree from pre-order and in-order sequences.
+     * 
+     * @param pre Pre-order sequence.
+     * @param in In-order sequence.
+     */
+    node* build_tree(T pre[], T in[], int pl, int pr, int il, int ir)
     {
-        if (pl > pr || il > lr) return nullptr;
+        if (pl > pr || il > ir) return nullptr;
         T root_data = pre[pl];
         node* root_node = new node(root_data);
         int root_index = -1;
-        for (int i = il; i <= lr; ++i)
+        for (int i = il; i <= ir; ++i)
         {
             if (in[i] == root_data)
             {
@@ -380,7 +386,7 @@ public:
         }
         int left_size = root_index - il;
         root_node->left = build_tree(pre, in, pl + 1, pl + left_size, il, root_index - 1);
-        root_node->right = build_tree(pre, in, pl + left_size + 1, pr, root_index + 1, lr);
+        root_node->right = build_tree(pre, in, pl + left_size + 1, pr, root_index + 1, ir);
         return root_node;
     }
 
@@ -452,9 +458,9 @@ void binary_link_list_test()
     for (int i = 0; i < n; ++i) cin >> pre[i];
     cout << "Enter the in-order sequence (space separated): ";
     for (int i = 0; i < n; ++i) cin >> in[i];
-    binary_link_list<char> tree2(pre, in, n, '~');
+    binary_link_list<char> tree_tmp(pre, in, n, '~');
     cout << "The constructed tree is:" << endl;
-    tree2.output();
+    tree_tmp.output();
     delete[] pre;
     delete[] in;
 }
