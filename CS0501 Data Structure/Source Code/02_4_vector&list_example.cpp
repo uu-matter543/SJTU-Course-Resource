@@ -98,3 +98,13 @@ void list_example()
     lst.clear();
     cout << "Is list empty after clear()? " << (lst.empty() ? "Yes" : "No") << endl;
 }
+
+int main()
+{
+    cout << "Vector Example:" << endl;
+    vector_example();
+    cout << endl;
+    cout << "List Example:" << endl;
+    list_example();
+    return 0;
+}

@@ -45,7 +45,8 @@ int kmp_match(const string &text, const string &pattern) {
     return -1;
 }
 
-void string_match_example() {
+int main()
+{
     cout << "Enter text: ";
     string text;
     getline(cin, text);

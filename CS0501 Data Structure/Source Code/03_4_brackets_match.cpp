@@ -32,10 +32,11 @@ void checkBrackets(const string& expression)
     else cout << "All brackets are matched." << endl;
 }
 
-void brackets_match_example()
+int main()
 {
     string expression;
     cout << "Enter an expression with brackets: ";
     getline(cin, expression);
     checkBrackets(expression);
+    return 0;
 }

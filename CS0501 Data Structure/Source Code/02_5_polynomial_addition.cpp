@@ -94,7 +94,7 @@ polynomial_node* polynomials_addition(polynomial_node *A, polynomial_node *B)
     return R;
 }
 
-void polynomial_addition_example()
+int main()
 {
     cout << "Enter the first polynomial (of exponents in increasing order):" << endl;
     polynomial_node *p1 = get_polynomial();
@@ -114,4 +114,5 @@ void polynomial_addition_example()
     delete p1;
     delete p2;
     delete result;
+    return 0;
 }

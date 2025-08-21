@@ -35,7 +35,8 @@ void carriage_rearrange(int a[], int n, int size) {
     cout << "Carriages rearranged successfully." << endl;
 }
 
-void carriage_rearrange_example() {
+int main()
+{
     int n;
     cout << "Enter the number of carriages: ";
     cin >> n;
@@ -48,4 +49,5 @@ void carriage_rearrange_example() {
     cout << "Enter the number of buffers: ";
     cin >> k;
     carriage_rearrange(a, n, k);
+    return 0;
 }

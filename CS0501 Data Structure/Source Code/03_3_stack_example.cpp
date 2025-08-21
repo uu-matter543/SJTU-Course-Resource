@@ -21,3 +21,9 @@ void stack_example()
     s.pop();
     cout << "Is stack empty after popping all elements? " << (s.empty() ? "Yes" : "No") << endl;
 }
+
+int main()
+{
+    stack_example();
+    return 0;
+}

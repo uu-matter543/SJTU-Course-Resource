@@ -24,3 +24,9 @@ void queue_example()
     // empty()
     cout << "Is queue empty? " << (q.empty() ? "Yes" : "No") << endl;
 }
+
+int main()
+{
+    queue_example();
+    return 0;
+}

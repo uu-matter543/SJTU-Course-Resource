@@ -125,7 +125,7 @@ int calc_post(string str)
     return result;
 }
 
-void expression_calculation_example()
+int main()
 {
     string expression;
     cout << "Enter an infix expression: " << endl;
@@ -136,4 +136,5 @@ void expression_calculation_example()
     int result = calc_post(suf_form);
     if (result != INT_MAX) cout << "Result: " << result << endl;
     else cout << "Calculation failed." << endl;
+    return 0;
 }
