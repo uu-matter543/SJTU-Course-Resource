@@ -35,46 +35,46 @@ longdelay ENDP
 模拟红绿灯时，初态两向均为红灯，常态红绿灯阶段调用长延迟模拟，绿灯闪烁阶段循环调用短延迟模拟即可，如汇编代码所示
 
 ```asm
-State0: MOV AL,00110110B
-    OUT PortOut,AL
-    CALL shortdelay     ;初态：两向均为红灯
+State0:   MOV AL,00110110B
+          OUT PortOut,AL
+          CALL shortdelay     ;初态：两向均为红灯
         
-State1: MOV AL,00110011B
-    OUT PortOut,AL
-    CALL longdelay      ;南北绿灯，东西红灯
+State1:   MOV AL,00110011B
+          OUT PortOut,AL
+          CALL longdelay      ;南北绿灯，东西红灯
         
-    MOV CX,3
-State2: MOV AL,00110011B
-    OUT PortOut,AL
-    CALL shortdelay
-    MOV AL,00110111B
-    OUT PortOut,AL 
-    CALL shortdelay                
-    LOOP State2         ;南北绿灯闪烁，东西红灯
+          MOV CX,3
+State2:   MOV AL,00110011B
+          OUT PortOut,AL
+          CALL shortdelay
+          MOV AL,00110111B
+          OUT PortOut,AL 
+          CALL shortdelay                
+          LOOP State2         ;南北绿灯闪烁，东西红灯
         
-State3: MOV AL,00110101B
-    OUT PortOut,AL
-    CALL shortdelay
-    CALL shortdelay     ;南北黄灯，东西红灯
-    MOV AL,00011110B
-    OUT PortOut,AL
-    CALL longdelay      ;南北红灯，东西绿灯
+State3:   MOV AL,00110101B
+          OUT PortOut,AL
+          CALL shortdelay
+          CALL shortdelay     ;南北黄灯，东西红灯
+          MOV AL,00011110B
+          OUT PortOut,AL
+          CALL longdelay      ;南北红灯，东西绿灯
         
-    MOV CX,3
-State4: MOV AL,00011110B
-    OUT PortOut,AL
-    CALL shortdelay
-    MOV AL,00111110B
-    OUT PortOut,AL 
-    CALL shortdelay                 
-    LOOP State4         ;南北红灯，东西绿灯闪烁
+          MOV CX,3
+State4:   MOV AL,00011110B
+          OUT PortOut,AL
+          CALL shortdelay
+          MOV AL,00111110B
+          OUT PortOut,AL 
+          CALL shortdelay                 
+          LOOP State4         ;南北红灯，东西绿灯闪烁
         
-State5: MOV AL,00101110B
-    OUT PortOut,AL
-    CALL shortdelay 
-    CALL shortdelay     ;南北红灯，东西黄灯
+State5:   MOV AL,00101110B
+          OUT PortOut,AL
+          CALL shortdelay 
+          CALL shortdelay     ;南北红灯，东西黄灯
 
-    JMP State1
+          JMP State1
 ```
 
 ## Experiment 13
