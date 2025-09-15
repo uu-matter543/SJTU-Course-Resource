@@ -6,3 +6,5 @@ Resources from what I learned from SJTU
 Completed:
 
 CS2303 Operating System Projects, 2024-2025-2, 中文班
+
+CS2308 Algorithm and Complexity, 2024-2025-2, 中文班
