@@ -26,7 +26,7 @@ int max_subsequence_sum(int a[], int size, int &start, int &end) {
     return max_sum;
 }
 
-int max_subsequence_sum_example()
+int main()
 {
     int n;
     cout << "Enter the number of elements in the array: ";

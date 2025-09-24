@@ -175,6 +175,7 @@ int main()
     string expression;
     cout << "Enter an expression: " << endl;
     cout << "(Please ensure the divisor divides the dividend, i.e. the remainder is 0)" << endl;
+    cout << "(Please do not enter unnecessary brackets, e.g. brackets including the whole expression)" << endl;
     getline(cin, expression);
     vector<string> tokens = tokenize(expression);
     

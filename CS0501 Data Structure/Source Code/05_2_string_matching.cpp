@@ -59,4 +59,5 @@ int main()
 
     cout << "Brute Force Match Index: " << bf_result << endl;
     cout << "KMP Match Index: " << kmp_result << endl;
+    return 0;
 }
