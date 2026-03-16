@@ -1,11 +1,12 @@
 # CS2303 操作系统课程设计
 
-2024-2025-2，中文班
+2024-2025-2 学期，**吴晨涛**老师 **过敏意**老师 讲授
+
 课程**CS2310 现代操作系统**的配套课程设计
-内容为8个Project（主要内容来自参考书《Operating System Concepts 10th Edition》第1~10章）
-所用虚拟机参数：
-`VirtualBox 7.1.4`
-`Ubuntu 24.04 - Linux Kernel 6.11.0`
+
+内容为如下 8 个 Project（主要内容来自参考书《Operating System Concepts 10th Edition》第1~10章）
+
+所用虚拟机参数：`VirtualBox 7.1.4` `Ubuntu 24.04 - Linux Kernel 6.11.0`
 
 ## Project 1
 
