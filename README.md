@@ -48,6 +48,8 @@ Resources from what I learned from SJTU
 
 ## 2025-2026-1 学期
 
+### [CS2522工程实践与科技创新Ⅲ-D](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2522%20Science%20and%20Technology%20Innovation%203D)
+
 ### [CS3313计算理论](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS3313%20Computing%20Theory)
 
 - [书面作业](https://github.com/uu-matter543/SJTU-Course-Resource/blob/SJTU-Course-Resource/CS3313%20Computing%20Theory/CS3313-Computing%20Theory-Homework.pdf)
