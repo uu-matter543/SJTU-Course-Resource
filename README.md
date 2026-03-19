@@ -39,7 +39,6 @@ Resources from what I learned from SJTU
 ### [CS2308算法与复杂性](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2308%20Algorithm%20and%20Complexity)
 
 - [课程笔记](https://github.com/uu-matter543/SJTU-Course-Resource/blob/SJTU-Course-Resource/CS2308%20Algorithm%20and%20Complexity/CS2308-Algorithm%20and%20Complexity-Notes.pdf)
-
 - [书面作业](https://github.com/uu-matter543/SJTU-Course-Resource/blob/SJTU-Course-Resource/CS2308%20Algorithm%20and%20Complexity/CS2308-Algorithm%20and%20Complexity-Homework.pdf)
 
 ### [CS2310现代操作系统](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2310%20Modern%20Operating%20Systems)
