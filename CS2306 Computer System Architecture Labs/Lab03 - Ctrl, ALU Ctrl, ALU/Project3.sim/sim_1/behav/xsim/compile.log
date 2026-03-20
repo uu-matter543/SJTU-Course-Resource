@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Desktop/ArchiLabs/Project3/Project3.srcs/sources_1/new/alu.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module alu
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Desktop/ArchiLabs/Project3/Project3.srcs/sim_1/new/alu_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module alu_tb
