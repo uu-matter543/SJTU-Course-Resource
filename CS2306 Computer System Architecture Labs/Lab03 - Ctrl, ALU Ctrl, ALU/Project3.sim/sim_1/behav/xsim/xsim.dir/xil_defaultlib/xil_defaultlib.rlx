@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/Desktop/ArchiLabs/Project3/Project3.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+E:/Desktop/ArchiLabs/Project3/Project3.srcs/sim_1/new/alu_control_unit_tb.v,1746618427,verilog,,,,alu_control_unit_tb,,,,,,,,
+E:/Desktop/ArchiLabs/Project3/Project3.srcs/sim_1/new/alu_tb.v,1746620283,verilog,,,,alu_tb,,,,,,,,
+E:/Desktop/ArchiLabs/Project3/Project3.srcs/sim_1/new/control_unit_tb.v,1746616311,verilog,,,,control_unit_tb,,,,,,,,
+E:/Desktop/ArchiLabs/Project3/Project3.srcs/sources_1/new/alu.v,1746619107,verilog,,E:/Desktop/ArchiLabs/Project3/Project3.srcs/sim_1/new/alu_tb.v,,alu,,,,,,,,
+E:/Desktop/ArchiLabs/Project3/Project3.srcs/sources_1/new/alu_control_unit.v,1746618757,verilog,,E:/Desktop/ArchiLabs/Project3/Project3.srcs/sim_1/new/alu_control_unit_tb.v,,alu_control_unit,,,,,,,,
+E:/Desktop/ArchiLabs/Project3/Project3.srcs/sources_1/new/control_unit.v,1746616115,verilog,,E:/Desktop/ArchiLabs/Project3/Project3.srcs/sim_1/new/control_unit_tb.v,,control_unit,,,,,,,,
