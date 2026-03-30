@@ -36,6 +36,15 @@ Resources from what I learned from SJTU
 - [书面作业](https://github.com/uu-matter543/SJTU-Course-Resource/blob/SJTU-Course-Resource/CS2304%20Mathematical%20Foundations%20of%20Computer%20Science/CS2304-Mathematical%20Foundations%20of%20Computer%20Science-Homework.pdf)
 - [课程笔记](https://github.com/uu-matter543/SJTU-Course-Resource/blob/SJTU-Course-Resource/CS2304%20Mathematical%20Foundations%20of%20Computer%20Science/CS2304-Mathematical%20Foundations%20of%20Computer%20Science-Notes.pdf)
 
+### [CS2306计算机系统结构实验](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2306%20Computer%20System%20Architecture%20Labs)
+
+- [课程设计1](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2306%20Computer%20System%20Architecture%20Labs/Lab01%20-%20Flowing%20light)
+- [课程设计2](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2306%20Computer%20System%20Architecture%20Labs/Lab02%20-%204-bit%20adder)
+- [课程设计3](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2306%20Computer%20System%20Architecture%20Labs/Lab03%20-%20Ctrl%2C%20ALU%20Ctrl%2C%20ALU)
+- [课程设计4](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2306%20Computer%20System%20Architecture%20Labs/Lab04%20-%20Reg%2C%20Data%20Mem%2C%20Signext)
+- [课程设计5](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2306%20Computer%20System%20Architecture%20Labs/Lab05%20-%20MIPS%20Single-Cycle%20CPU)
+- [课程设计6](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2306%20Computer%20System%20Architecture%20Labs/Lab06%20-%20MIPS%20Pipelining%20CPU)
+
 ### [CS2308算法与复杂性](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS2308%20Algorithm%20and%20Complexity)
 
 - [课程笔记](https://github.com/uu-matter543/SJTU-Course-Resource/blob/SJTU-Course-Resource/CS2308%20Algorithm%20and%20Complexity/CS2308-Algorithm%20and%20Complexity-Notes.pdf)
