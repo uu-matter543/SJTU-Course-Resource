@@ -61,3 +61,4 @@ Resources from what I learned from SJTU
 ### [CS3313计算理论](https://github.com/uu-matter543/SJTU-Course-Resource/tree/SJTU-Course-Resource/CS3313%20Computing%20Theory)
 
 - [书面作业](https://github.com/uu-matter543/SJTU-Course-Resource/blob/SJTU-Course-Resource/CS3313%20Computing%20Theory/CS3313-Computing%20Theory-Homework.pdf)
+- [课程笔记](https://github.com/uu-matter543/SJTU-Course-Resource/blob/SJTU-Course-Resource/CS3313%20Computing%20Theory/CS3313-Computing%20Theory-Notes.pdf)
